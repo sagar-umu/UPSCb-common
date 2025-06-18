@@ -4,6 +4,9 @@ import shutil
 REPO_ROOT = "."
 DOCS_DIR = "docs"
 
+print(f"Copying from: {REPO_ROOT}")
+print(f"Copying into: {DOCS_DIR}")
+
 EXCLUDE_DIRS = {
     DOCS_DIR, ".git", ".github", "site", "venv", ".venv", "__pycache__", ".mypy_cache"
 }
@@ -67,3 +70,11 @@ def clone_repo_dirs():
 
 if __name__ == "__main__":
     clone_repo_dirs()
+
+print("Final docs folder content:")
+for root, dirs, files in os.walk(DOCS_DIR):
+    level = root.replace(DOCS_DIR, '').count(os.sep)
+    indent = ' ' * 4 * level
+    print(f"{indent}{os.path.basename(root)}/")
+    for f in files:
+        print(f"{indent}    {f}")
