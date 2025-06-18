@@ -3,7 +3,7 @@
  build:
    os: "ubuntu-24.04"
    tools:
-     python: "3"
+     python: "3.13"
    install:
        - requirements: docs/requirements.txt
        - python clone_directories_to_docs.py
