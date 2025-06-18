@@ -6,7 +6,9 @@
      python: "3.13"
    commands:
     - python clone_directories_to_docs.py
- 
+ jobs:
+    pre_build:
+      - pydoc-markdown --build --site-dir "$READTHEDOCS_OUTPUT/html"
  python:
    install:
        - requirements: docs/requirements.txt
