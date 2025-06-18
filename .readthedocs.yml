@@ -1,16 +1,17 @@
- version: 2
+version: 2
 
- build:
-   os: "ubuntu-24.04"
-   tools:
-     python: "3.13"
-   commands:
-    - python clone_directories_to_docs.py
- jobs:
-      - pydoc-markdown --build --site-dir "$READTHEDOCS_OUTPUT/html"
- python:
-   install:
-       - requirements: docs/requirements.txt
-       
- mkdocs:
-   configuration: mkdocs.yml
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.10"
+
+python:
+  install:
+    - requirements: requirements.txt
+
+mkdocs:
+  configuration: mkdocs.yml
+
+# Custom pre-build step to clone folders into docs/
+build.commands:
+  - python clone_directories_to_docs.py
