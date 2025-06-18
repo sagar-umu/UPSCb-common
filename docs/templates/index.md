@@ -1,2 +1,1 @@
-# File for templates
-
+# This is for templates
