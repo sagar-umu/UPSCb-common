@@ -7,7 +7,7 @@
    commands:
     - python clone_directories_to_docs.py
  jobs:
-    pre_build:
+    build:
       - pydoc-markdown --build --site-dir "$READTHEDOCS_OUTPUT/html"
  python:
    install:
