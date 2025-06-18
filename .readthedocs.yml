@@ -4,7 +4,7 @@
    os: "ubuntu-24.04"
    tools:
      python:
-      version: "3.13"
+      version: "3.x"
    install:
        - requirements: docs/requirements.txt
  mkdocs:
