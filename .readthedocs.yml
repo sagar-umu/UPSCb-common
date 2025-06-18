@@ -8,6 +8,8 @@
  python:
    install:
        - requirements: docs/requirements.txt
-       - run: clone_directories_to_docs.py
+   run: clone_directories_to_docs.py
+ 
  mkdocs:
    configuration: mkdocs.yml
+   
