@@ -8,10 +8,8 @@ build:
 python:
   install:
     - requirements: requirements.txt
+    - method: pip
+      path: .
 
 mkdocs:
   configuration: mkdocs.yml
-
-# Custom pre-build step to clone folders into docs/
-build.commands:
-  - python clone_directories_to_docs.py
