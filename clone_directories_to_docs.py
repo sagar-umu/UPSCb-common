@@ -5,7 +5,7 @@ REPO_ROOT = "."
 DOCS_DIR = "docs"
 
 EXCLUDE_DIRS = {
-    DOCS_DIR, ".git", ".github", "site", "venv", ".venv", "__pycache__", ".mypy_cache"
+    DOCS_DIR, ".git", ".github", "site", "venv", ".venv", "__pycache__", ".mypy_cache", "kogia", "Rtoolbox"
 }
 EXCLUDE_FILES = {
     "mkdocs.yml", "requirements.txt", "readthedocs.yml", "clone_directories_to_docs.py"
