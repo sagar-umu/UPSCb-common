@@ -39,6 +39,8 @@ def clone_repo_dirs():
  
     for entry in INCLUDE_DIRS:
         src_path = os.path.join(REPO_ROOT, entry)
+          # Rename 'templates' → 'Templates' only
+        dst_folder_name = "Templates" if entry == "templates" else entry
         dst_path = os.path.join(DOCS_DIR, entry)
 
         if os.path.isdir(src_path):
