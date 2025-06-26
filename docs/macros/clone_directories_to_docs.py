@@ -3,18 +3,10 @@ import shutil
 
 REPO_ROOT = "."
 DOCS_DIR = "docs"
-
-# Directories to include in the copy
 INCLUDE_DIRS = {"nextflow", "pipeline", "src", "Templates"}
 
-# Files to exclude (not used in this version, but left for future filtering)
 EXCLUDE_FILES = {
     "mkdocs.yml", "requirements.txt", "readthedocs.yml", "clone_directories_to_docs.py"
-}
-
-# Optional renaming of certain source folders in the destination
-RENAME_MAP = {
-    "Templates": "starters"
 }
 
 def should_copy(src, dst):
@@ -44,16 +36,17 @@ def safe_copytree(src, dst):
 def clone_repo_dirs():
     os.makedirs(DOCS_DIR, exist_ok=True)
 
+ 
     for entry in INCLUDE_DIRS:
         src_path = os.path.join(REPO_ROOT, entry)
-        dst_folder_name = RENAME_MAP.get(entry, entry)  # Rename if in map
-        dst_path = os.path.join(DOCS_DIR, dst_folder_name)
+        dst_path = os.path.join(DOCS_DIR, entry)
 
         if os.path.isdir(src_path):
-            print(f"Cloning folder: {entry} -> {dst_folder_name}/")
+            print(f"Cloning folder: {entry} -> {dst_path}")
             safe_copytree(src_path, dst_path)
         else:
             print(f"Skipped missing folder: {entry}")
 
 if __name__ == "__main__":
     clone_repo_dirs()
+    

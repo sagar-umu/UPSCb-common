@@ -1,4 +1,30 @@
-# UPSCb-common introduction <a name="upscb-common-introduction></a>
+- [UPSCb-common introduction](#upscb-common-introduction)
+- [Infrastructure](#infrastructure)
+  - [Local](#local)
+  - [National/Regional](#nationalregional)
+- [Getting started](#getting-started)
+- [Accessing/Using resources](#accessingusing-resources)
+  - [Bash vs R](#bash-vs-r)
+    - [Bash:](#bash)
+    - [R:](#r)
+- [Data managament](#data-managament)
+- [Frequently used terms/resources](#frequently-used-termsresources)
+  - [CITATION](#citation)
+  - [IMPORTANT NOTICE](#important-notice)
+  - [Structure](#structure)
+  - [Frequently used terms/resources](#frequently-used-termsresources-1)
+  - [Access](#access)
+  - [Setup your project](#setup-your-project)
+  - [Rules of conduct](#rules-of-conduct)
+- [Visulization examples](#visulization-examples)
+- [Templates](#templates)
+- [Useful links](#useful-links)
+- [Troubleshooting](#troubleshooting)
+  - [Resolving Issues by yourself](#resolving-issues-by-yourself)
+  - [Contact us](#contact-us)
+
+
+# UPSCb-common introduction
 
 Here you will find the most basic information about the bio-info facility's infrastructure and how to properly use it to ensure minimum disruptions and maximum productivity. Please read this guide to gain a basic idea of what resources are at your disposal and how to use them properly. If and when you come across an unfamiliar term, please visit the ***Frequently used terms/resources*** section. 
 
@@ -11,7 +37,7 @@ At UPSCb we have our own servers for both computation and storage. We also use r
 Our on-site machines are used for both computation and storage. A few names you will come across frequently are `riboexplorer`, `aspseq` and `microasp`. All of these machines are accessed via `ssh`(more information on accessing these can be found below).
 
 ## National/Regional
-High Performance Computing Center North [HPC2N](https://www.hpc2n.umu.se/) offers an [Open On Demand](https://portal.hpc2n.umu.se/public/landing_page.html) system to request and use their resources. We will help you gain access to this resource and provide intial training to use it. There are several such computing centers in Sweden operating under the National Academic Infrastructure for Super­computing in Sweden [(NAISS)](https://www.naiss.se/) umbrella. Access to these can be discussed according to the computational needs of individual projects.  
+High Performance Computing Center North [HPC2N](https://www.hpc2n.umu.se/) offers an [Open On Demand](https://portal.hpc2n.umu.se/public/landing_page.html) system to request and use their resources. We will help you gain access to this resource and provide intial training to use it. There are several such computing centers in Sweden operating under the National Academic Infrastructure for Super­computing in Sweden [NAISS](https://www.naiss.se/) umbrella. Access to these can be discussed according to the computational needs of individual projects.  
 
 # Getting started
 
