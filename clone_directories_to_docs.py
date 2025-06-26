@@ -3,7 +3,7 @@ import shutil
 
 REPO_ROOT = "."
 DOCS_DIR = "docs"
-INCLUDE_DIRS = {"nextflow", "pipeline", "src", "templates", "test_dir"}
+INCLUDE_DIRS = {"nextflow", "pipeline", "src", "templates", "testDIR"}
 
 EXCLUDE_FILES = {
     "mkdocs.yml", "requirements.txt", "readthedocs.yml", "clone_directories_to_docs.py"
