@@ -3,7 +3,7 @@ import shutil
 
 REPO_ROOT = "."
 DOCS_DIR = "docs"
-INCLUDE_DIRS = {"nextflow", "pipeline", "src", "Templates"}
+INCLUDE_DIRS = {"nextflow", "pipeline", "src", "templates"}
 
 EXCLUDE_FILES = {
     "mkdocs.yml", "requirements.txt", "readthedocs.yml", "clone_directories_to_docs.py"
@@ -40,7 +40,7 @@ def clone_repo_dirs():
     for entry in INCLUDE_DIRS:
         src_path = os.path.join(REPO_ROOT, entry)
           # Rename 'templates' → 'Templates' only
-        dst_folder_name = "Templates" if entry == "templates" else entry
+        dst_folder_name = "WTF" if entry == "templates" else entry
         dst_path = os.path.join(DOCS_DIR, entry)
 
         if os.path.isdir(src_path):
