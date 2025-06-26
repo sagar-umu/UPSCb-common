@@ -25,7 +25,6 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
-    - toc.integrate
     - search.suggest
     - search.highlight
     - content.tabs.link
