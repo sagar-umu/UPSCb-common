@@ -45,5 +45,10 @@ In some cases, where you need to run the R-script through the `SLURM` queue, the
 
 Several R scripts for generating a variety of plots or doing different analysis are available in the UPSCb-common repository and should be available in your home directory once you have cloned it as shown in the [Onboarding](2.%20Onboarding.md) tab. 
 
-Other important scrpits are BiologicalQA.R/Rmd, DifferentialExpression.R and DifferentialExpression_WithGOenrichment.Rmd. These are available in the `Templates` directory of the repository and more information about them is in the [Templates](templates.md) tab. 
+Other important scrpits are BiologicalQA.R/Rmd, and DifferentialExpression_WithGOenrichment.Rmd. These are available in the `Templates` directory of the repository and more information about them is in the [Templates](templates.md) tab. 
  
+
+## Resolving Issues by yourself
+
+While we are always happy to help, here are some [Rstudio common issues](https://gist.github.com/nicolasDelhomme/5bde1e878b2eaa3def1cced06076b7db) and how to try and resolve them. 
+
